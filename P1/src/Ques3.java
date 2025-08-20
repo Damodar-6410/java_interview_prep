@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class Ques3 {
-    // nth highest String in sentence
+    // nth highest word in sentence
 
     public static void main(String[] args) {
 
