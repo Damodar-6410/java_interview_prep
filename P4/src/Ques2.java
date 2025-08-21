@@ -1,18 +1,18 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class Ques1 {
-    //Remove non-numeric String from List(Only digit)
+public class Ques2 {
+    //Remove non-digit char from string
     public static void main(String[] args) {
-
-        String[] str = {"abc","123","1a23","456"};
+        String[] str = {"abc123","34we","456rt","132er","44"};
+        Pattern pattern = Pattern.compile("[^0-9]");
 
         List<String> collect = Arrays.stream(str)
-                .filter(x -> x.matches("[0-9]+"))
+                .map(x -> pattern.matcher(x).replaceAll(""))
                 .collect(Collectors.toList());
 
         System.out.println(collect);
-
     }
 }
