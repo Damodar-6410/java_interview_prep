@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Ques10 {
+    //Convert List of Employee to Map
     public static void main(String[] args) {
         List<Employee> list = new ArrayList<>();
         list.add(new Employee("Abc", "IT",12000));
